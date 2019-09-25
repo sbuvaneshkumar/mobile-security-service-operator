@@ -130,6 +130,7 @@ backup/uninstall:
 .PHONY: code/build/linux
 code/build/linux:
 	env GOOS=linux GOARCH=amd64 go build $(APP_FILE)
+	echo "$(VARIABLE)"
 
 .PHONY: image/build/master
 image/build/master:
@@ -195,7 +196,7 @@ code/vet:
 	go vet $$(go list ./... | grep -v /vendor/)
 
 .PHONY: code/fmt
-code/fmt:
+code/f
 	@echo go fmt
 	go fmt $$(go list ./... | grep -v /vendor/)
 
