@@ -130,7 +130,7 @@ backup/uninstall:
 .PHONY: code/build/linux
 code/build/linux:
 	env GOOS=linux GOARCH=amd64 go build $(APP_FILE)
-	echo "$(VARIABLE)"
+	echo "basic $(VARIABLE)"
 
 .PHONY: image/build/master
 image/build/master:
