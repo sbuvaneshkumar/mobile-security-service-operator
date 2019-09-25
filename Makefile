@@ -196,7 +196,7 @@ code/vet:
 	go vet $$(go list ./... | grep -v /vendor/)
 
 .PHONY: code/fmt
-code/f
+code/f:
 	@echo go fmt
 	go fmt $$(go list ./... | grep -v /vendor/)
 
